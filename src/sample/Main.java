@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("JavaFX Welcome");
         Button btn = new Button();
         btn.setText("Say 'Hello World!'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -28,6 +28,7 @@ public class Main extends Application {
         StackPane toor = new StackPane();
         toor.getChildren().add(btn);
         primaryStage.setScene(new Scene(toor, 300, 250));
+
         primaryStage.show();
     }
 
